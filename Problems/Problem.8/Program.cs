@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Problem._8
 {
@@ -54,10 +53,24 @@ namespace Problem._8
                                         "05886116467109405077541002256983155200055935729725" +
                                         "71636269561882670428252483600823257530420752963450";
 
-            
+            var maxProduct = SplitIntoGroups(InputString, 5).Max();
 
-            Console.WriteLine("Result :");
+            Console.WriteLine("Result :" + maxProduct);
             Console.ReadKey();
         }
+
+        private static IEnumerable<int> SplitIntoGroups(string inputString, int groupSize)
+        {
+            var groups = new List<string>();
+            for (var q = 0; q <= (inputString.Length - groupSize); q++)
+            {
+                groups.Add(inputString.Substring(q, groupSize));
+            }
+            var productOfGroups =
+                groups.Where(s => !s.Contains('0'))
+                      .Select(s => s.ToCharArray().Aggregate(1, (result, next) => result * ((int)next - 48)));
+
+            return productOfGroups;
+        } 
     }
 }
