@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem.8", "Problem.8\Prob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem.9", "Problem.9\Problem.9.csproj", "{BEA2F9A3-16AC-43F0-967D-35A1F567310A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem.10", "Problem.10\Problem.10.csproj", "{DC6A9F1C-F9BE-40BD-834D-4EDE56A2F454}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -61,6 +63,10 @@ Global
 		{BEA2F9A3-16AC-43F0-967D-35A1F567310A}.Debug|x86.Build.0 = Debug|x86
 		{BEA2F9A3-16AC-43F0-967D-35A1F567310A}.Release|x86.ActiveCfg = Release|x86
 		{BEA2F9A3-16AC-43F0-967D-35A1F567310A}.Release|x86.Build.0 = Release|x86
+		{DC6A9F1C-F9BE-40BD-834D-4EDE56A2F454}.Debug|x86.ActiveCfg = Debug|x86
+		{DC6A9F1C-F9BE-40BD-834D-4EDE56A2F454}.Debug|x86.Build.0 = Debug|x86
+		{DC6A9F1C-F9BE-40BD-834D-4EDE56A2F454}.Release|x86.ActiveCfg = Release|x86
+		{DC6A9F1C-F9BE-40BD-834D-4EDE56A2F454}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
